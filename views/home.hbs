@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{titulo}} {{nombre}}</title>
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+
+</head>
+<body>
+    {{> header }} 
+
+
+    
+
+
+
+    <main>
+<div class="profile-container">
+    <section class="profile">
+        <img src="./assets/imagenes/pastoraleman.webp" alt="Perros" class="profile-photo">
+    </section>
+    <section class="profile">
+        <img src="./assets/imagenes/golden.jpg" alt="Perros" class="profile-photo">
+    </section>
+    <section class="profile">
+        <img src="./assets/imagenes/pequines.jpg" alt="Perros" class="profile-photo">
+    </section>
+</div>
+
+
+        <section class="intro">
+            <h1>¡Bienvenido!</h1>
+            <p>En esta pagina hablaremos sobre perros</p>
+            <p>Siendo estos Pastor aleman, golden y pequines</p>
+            <p></p>
+        </section>
+
+            <section class="informacion">
+            <h2>Pastor Alemán, Golden Retriever y Pequinés: Similitudes y Diferencias</h2>
+            <div class="info">
+                <h3>Similitudes:</h3>
+                
+
+                <p>Carácter leal y afectuoso: Tanto el Pastor Alemán como el Golden Retriever y el Pequinés son conocidos por su lealtad hacia sus dueños y su carácter afectuoso. Son excelentes perros de compañía y se vinculan fuertemente con sus familias.
+Popularidad: Los tres son razas populares, aunque en contextos diferentes. El Pastor Alemán y el Golden Retriever son famosos a nivel mundial por su versatilidad y temperamento equilibrado, mientras que el Pequinés es conocido principalmente en círculos más pequeños debido a su tamaño y apariencia distintiva.</p>
+<h3>Diferencias:</h3>
+
+<p>Tamaño: El Pastor Alemán es una raza de gran tamaño, el Golden Retriever es de tamaño mediano a grande, mientras que el Pequinés es una raza pequeña, ideal para espacios reducidos.
+Apariencia y pelaje: El Pastor Alemán tiene un pelaje denso y puede ser corto o largo; el Golden Retriever tiene un pelaje largo y ondulado, mientras que el Pequinés posee un pelaje largo, espeso y distintivo, que requiere mucho mantenimiento.
+Temperamento y energía: El Pastor Alemán es un perro de trabajo con una alta energía y necesidad de actividad física; el Golden Retriever también es enérgico y juguetón, aunque más suave de carácter. El Pequinés, por su parte, es más independiente y reservado, además de requerir menos ejercicio.
+Propósito original: El Pastor Alemán fue criado para pastorear y trabajar en seguridad, el Golden Retriever para recuperar presas en actividades de caza, y el Pequinés fue un perro de compañía exclusivo de la realeza china.</p>
+            </div>
+                   </section>    
+
+    </main>
+    
+    {{> footer }}
+    <script src="/js/menu.js"></script>
+    <script>
+    const checkbox = document.getElementById('checkbox');
+
+    checkbox.addEventListener('change', () => {
+        document.body.classList.toggle('dark-mode', checkbox.checked);
+    });
+</script>
+
+</body>
+</html>
