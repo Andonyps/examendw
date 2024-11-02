@@ -13,27 +13,27 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
     res.render('home', {
-        nombre: 'Brenton Andony',
+        nombre: 'Brenton Andony 2290-21-12374',
         titulo: 'Perros'
     });
 });
 
 app.get('/pastor', (req, res) => {
     res.render('pastor', {
-        nombre: 'Brenton Andony',
+        nombre: 'Brenton Andony 2290-21-12374',
         titulo: 'Perros'
     });
 });
 
 app.get('/golden', (req, res) => {
     res.render('golden', {
-        nombre: 'Brenton Andony',
+        nombre: 'Brenton Andony 2290-21-12374',
         titulo: 'Perros'
     });
 });
 app.get('/pequines', (req, res) => {
     res.render('pequines', {
-        nombre: 'Brenton Andony',
+        nombre: 'Brenton Andony 2290-21-12374',
         titulo: 'Perros'
     });
 });
